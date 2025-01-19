@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api_pokemon_laravel
+    ports:
+      - "8000:80"
+    volumes:
+      - ./app:/app
+    environment:
+      - PHP_DISPLAY_ERRORS=1
+      - PHP_MEMORY_LIMIT=512M
+      - WEB_DOCUMENT_ROOT=/app/public
+      - COMPOSER_VERSION=2
+    working_dir: /app
+    networks:
+      - laravel
+    depends_on:
+      - db
+    command: bash -c "if [ -z \"$(ls -A /app)\" ]; then composer create-project --prefer-dist laravel/laravel . ; fi && supervisord"
+
+  db:
+    image: mysql:8.0
+    container_name: mysql_db_pokemon
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: laravel
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: secret
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - laravel
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_pokemon
+    restart: always
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    networks:
+      - laravel
+
+networks:
+  laravel:
+    driver: bridge
+
+volumes:
+  db_data:
