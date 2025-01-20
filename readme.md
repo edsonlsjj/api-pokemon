@@ -165,7 +165,7 @@ curl "http://localhost:8000/api/pokemon?nome=Pikachu&tipo=Electric&page=4"
 
 ---
 
-## Testes
+## Testes **Coverage**: 100%
 
 A aplicação inclui testes automatizados que podem ser executados com o PHPUnit.
 
@@ -176,7 +176,7 @@ A aplicação inclui testes automatizados que podem ser executados com o PHPUnit
 
 2. Execute os testes:
    ```bash
-   php artisan test
+    php artisan test --coverage --min=100
    ```
 
 ---

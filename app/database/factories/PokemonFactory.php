@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Pokemon;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Modules\Pokemon\Infrastructure\Models\Pokemon;
 
 class PokemonFactory extends Factory
 {

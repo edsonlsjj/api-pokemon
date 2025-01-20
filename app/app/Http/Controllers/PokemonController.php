@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Domain\Filters\PokemonFilter;
-use App\Domain\Services\PokemonService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Modules\Pokemon\Application\Filters\PokemonFilter;
+use Modules\Pokemon\Application\Services\PokemonService;
 
 class PokemonController extends Controller
 {

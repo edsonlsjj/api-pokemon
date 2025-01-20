@@ -44,3 +44,225 @@
 2025-01-19 16:11:14,204 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 2025-01-19 16:11:14,204 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 2025-01-19 16:11:15,427 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-01-19 20:20:53,849 WARN received SIGQUIT indicating exit request
+2025-01-19 20:20:53,858 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd, sshd to die
+2025-01-19 20:20:53,865 INFO stopped: sshd (exit status 0)
+2025-01-19 20:20:55,868 INFO reaped unknown pid 220 (terminated by SIGTERM)
+2025-01-19 20:20:55,868 INFO reaped unknown pid 222 (terminated by SIGTERM)
+2025-01-19 20:20:55,868 INFO reaped unknown pid 4573 (terminated by SIGTERM)
+2025-01-19 20:20:56,869 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-19 20:21:00,092 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-19 20:21:00,428 INFO stopped: postfixd (exit status 0)
+2025-01-19 20:21:00,429 WARN stopped: crond (terminated by SIGTERM)
+2025-01-19 20:21:01,233 INFO stopped: php-fpmd (exit status 0)
+2025-01-19 20:21:01,389 INFO stopped: nginxd (exit status 0)
+2025-01-19 20:21:02,494 INFO stopped: syslogd (exit status 0)
+2025-01-19 20:21:49,340 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-01-19 20:21:49,340 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2025-01-19 20:21:49,340 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2025-01-19 20:21:49,340 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2025-01-19 20:21:49,340 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2025-01-19 20:21:49,340 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2025-01-19 20:21:49,340 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2025-01-19 20:21:49,340 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2025-01-19 20:21:49,340 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2025-01-19 20:21:49,345 INFO RPC interface 'supervisor' initialized
+2025-01-19 20:21:49,346 INFO supervisord started with pid 1
+2025-01-19 20:21:50,348 INFO spawned: 'syslogd' with pid 82
+2025-01-19 20:21:50,349 INFO spawned: 'nginxd' with pid 83
+2025-01-19 20:21:50,352 INFO spawned: 'php-fpmd' with pid 84
+2025-01-19 20:21:50,354 INFO spawned: 'crond' with pid 85
+2025-01-19 20:21:50,356 INFO spawned: 'postfixd' with pid 87
+2025-01-19 20:21:50,361 INFO spawned: 'sshd' with pid 89
+2025-01-19 20:21:50,364 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 20:21:50,364 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 20:21:50,364 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 20:21:50,364 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 20:21:50,364 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 20:21:51,504 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-01-19 20:22:00,189 WARN received SIGQUIT indicating exit request
+2025-01-19 20:22:00,189 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd, sshd to die
+2025-01-19 20:22:00,191 INFO stopped: sshd (exit status 0)
+2025-01-19 20:22:01,193 INFO reaped unknown pid 220 (terminated by SIGTERM)
+2025-01-19 20:22:01,193 INFO reaped unknown pid 221 (terminated by SIGTERM)
+2025-01-19 20:22:01,193 INFO reaped unknown pid 222 (terminated by SIGTERM)
+2025-01-19 20:22:03,195 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-19 22:03:09,905 WARN killing 'postfixd' (87) with SIGKILL
+2025-01-19 22:03:09,906 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-19 22:03:10,907 WARN stopped: postfixd (terminated by SIGKILL)
+2025-01-19 22:03:10,908 WARN stopped: crond (terminated by SIGTERM)
+2025-01-19 22:03:11,910 INFO reaped unknown pid 239 (exit status 0)
+2025-01-19 22:03:11,925 INFO stopped: php-fpmd (exit status 0)
+2025-01-19 22:03:12,171 INFO stopped: nginxd (exit status 0)
+2025-01-19 22:03:13,173 INFO waiting for syslogd to die
+2025-01-19 22:03:13,276 INFO stopped: syslogd (exit status 0)
+2025-01-19 22:30:02,637 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-01-19 22:30:02,637 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2025-01-19 22:30:02,637 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2025-01-19 22:30:02,637 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2025-01-19 22:30:02,637 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2025-01-19 22:30:02,637 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2025-01-19 22:30:02,637 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2025-01-19 22:30:02,637 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2025-01-19 22:30:02,637 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2025-01-19 22:30:02,641 INFO RPC interface 'supervisor' initialized
+2025-01-19 22:30:02,644 INFO supervisord started with pid 1
+2025-01-19 22:30:03,646 INFO spawned: 'syslogd' with pid 81
+2025-01-19 22:30:03,647 INFO spawned: 'nginxd' with pid 82
+2025-01-19 22:30:03,649 INFO spawned: 'php-fpmd' with pid 83
+2025-01-19 22:30:03,651 INFO spawned: 'crond' with pid 84
+2025-01-19 22:30:03,652 INFO spawned: 'postfixd' with pid 85
+2025-01-19 22:30:03,654 INFO spawned: 'sshd' with pid 87
+2025-01-19 22:30:03,656 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 22:30:03,656 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 22:30:03,656 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 22:30:03,656 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 22:30:03,656 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 22:30:04,899 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-01-19 22:31:06,097 INFO reaped unknown pid 315 (exit status 0)
+2025-01-19 22:53:38,920 INFO reaped unknown pid 1107 (exit status 0)
+2025-01-19 23:04:14,852 INFO reaped unknown pid 1492 (exit status 0)
+2025-01-19 23:44:09,512 INFO reaped unknown pid 2932 (exit status 0)
+2025-01-19 23:53:57,324 WARN received SIGQUIT indicating exit request
+2025-01-19 23:53:57,326 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd, sshd to die
+2025-01-19 23:53:57,332 INFO stopped: sshd (exit status 0)
+2025-01-19 23:53:59,334 INFO reaped unknown pid 225 (terminated by SIGTERM)
+2025-01-19 23:53:59,334 INFO reaped unknown pid 226 (terminated by SIGTERM)
+2025-01-19 23:53:59,334 INFO reaped unknown pid 227 (terminated by SIGTERM)
+2025-01-19 23:54:00,335 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-19 23:54:03,338 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-19 23:54:04,282 INFO stopped: postfixd (exit status 0)
+2025-01-19 23:54:04,283 WARN stopped: crond (terminated by SIGTERM)
+2025-01-19 23:54:05,325 INFO stopped: php-fpmd (exit status 0)
+2025-01-19 23:54:05,528 INFO stopped: nginxd (exit status 0)
+2025-01-19 23:54:06,529 INFO waiting for syslogd to die
+2025-01-19 23:54:06,636 INFO stopped: syslogd (exit status 0)
+2025-01-19 23:54:35,624 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-01-19 23:54:35,624 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2025-01-19 23:54:35,624 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2025-01-19 23:54:35,624 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2025-01-19 23:54:35,624 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2025-01-19 23:54:35,624 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2025-01-19 23:54:35,624 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2025-01-19 23:54:35,624 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2025-01-19 23:54:35,624 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2025-01-19 23:54:35,629 INFO RPC interface 'supervisor' initialized
+2025-01-19 23:54:35,629 INFO supervisord started with pid 1
+2025-01-19 23:54:36,631 INFO spawned: 'syslogd' with pid 81
+2025-01-19 23:54:36,633 INFO spawned: 'nginxd' with pid 82
+2025-01-19 23:54:36,634 INFO spawned: 'php-fpmd' with pid 83
+2025-01-19 23:54:36,636 INFO spawned: 'crond' with pid 85
+2025-01-19 23:54:36,637 INFO spawned: 'postfixd' with pid 87
+2025-01-19 23:54:36,639 INFO spawned: 'sshd' with pid 88
+2025-01-19 23:54:36,640 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:54:36,640 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:54:36,640 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:54:36,640 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:54:36,640 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:54:37,723 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-01-19 23:59:39,280 WARN received SIGQUIT indicating exit request
+2025-01-19 23:59:39,280 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd, sshd to die
+2025-01-19 23:59:39,284 INFO stopped: sshd (exit status 0)
+2025-01-19 23:59:40,286 INFO reaped unknown pid 228 (terminated by SIGTERM)
+2025-01-19 23:59:40,287 INFO reaped unknown pid 229 (terminated by SIGTERM)
+2025-01-19 23:59:40,287 INFO reaped unknown pid 230 (terminated by SIGTERM)
+2025-01-19 23:59:42,289 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-19 23:59:45,127 INFO stopped: postfixd (exit status 0)
+2025-01-19 23:59:45,129 WARN stopped: crond (terminated by SIGTERM)
+2025-01-19 23:59:46,130 INFO waiting for syslogd, nginxd, php-fpmd to die
+2025-01-19 23:59:46,147 INFO stopped: php-fpmd (exit status 0)
+2025-01-19 23:59:46,343 INFO stopped: nginxd (exit status 0)
+2025-01-19 23:59:47,447 INFO stopped: syslogd (exit status 0)
+2025-01-19 23:59:48,392 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-01-19 23:59:48,392 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2025-01-19 23:59:48,392 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2025-01-19 23:59:48,392 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2025-01-19 23:59:48,392 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2025-01-19 23:59:48,392 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2025-01-19 23:59:48,392 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2025-01-19 23:59:48,392 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2025-01-19 23:59:48,392 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2025-01-19 23:59:48,395 INFO RPC interface 'supervisor' initialized
+2025-01-19 23:59:48,395 INFO supervisord started with pid 1
+2025-01-19 23:59:49,397 INFO spawned: 'syslogd' with pid 78
+2025-01-19 23:59:49,401 INFO spawned: 'nginxd' with pid 79
+2025-01-19 23:59:49,406 INFO spawned: 'php-fpmd' with pid 80
+2025-01-19 23:59:49,410 INFO spawned: 'crond' with pid 81
+2025-01-19 23:59:49,414 INFO spawned: 'postfixd' with pid 83
+2025-01-19 23:59:49,417 INFO spawned: 'sshd' with pid 85
+2025-01-19 23:59:49,419 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:59:49,419 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:59:49,419 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:59:49,419 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:59:49,420 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-19 23:59:50,488 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-01-20 00:05:25,709 WARN received SIGQUIT indicating exit request
+2025-01-20 00:05:25,709 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd, sshd to die
+2025-01-20 00:05:25,711 INFO stopped: sshd (exit status 0)
+2025-01-20 00:05:28,713 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-20 00:05:30,716 INFO reaped unknown pid 221 (terminated by SIGTERM)
+2025-01-20 00:05:30,717 INFO reaped unknown pid 222 (terminated by SIGTERM)
+2025-01-20 00:05:30,717 INFO reaped unknown pid 223 (terminated by SIGTERM)
+2025-01-20 00:05:31,718 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-20 00:05:34,721 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-20 00:05:34,859 INFO stopped: postfixd (exit status 0)
+2025-01-20 00:05:34,860 WARN stopped: crond (terminated by SIGTERM)
+2025-01-20 00:05:35,974 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-01-20 00:05:35,974 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2025-01-20 00:05:35,974 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2025-01-20 00:05:35,974 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2025-01-20 00:05:35,974 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2025-01-20 00:05:35,974 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2025-01-20 00:05:35,974 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2025-01-20 00:05:35,974 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2025-01-20 00:05:35,974 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2025-01-20 00:05:36,278 INFO RPC interface 'supervisor' initialized
+2025-01-20 00:05:36,279 INFO supervisord started with pid 1
+2025-01-20 00:05:37,281 INFO spawned: 'syslogd' with pid 78
+2025-01-20 00:05:37,284 INFO spawned: 'nginxd' with pid 79
+2025-01-20 00:05:37,285 INFO spawned: 'php-fpmd' with pid 80
+2025-01-20 00:05:37,287 INFO spawned: 'crond' with pid 82
+2025-01-20 00:05:37,289 INFO spawned: 'postfixd' with pid 83
+2025-01-20 00:05:37,291 INFO spawned: 'sshd' with pid 84
+2025-01-20 00:05:37,293 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:05:37,294 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:05:37,294 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:05:37,295 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:05:37,295 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:05:38,368 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-01-20 00:06:03,280 WARN received SIGQUIT indicating exit request
+2025-01-20 00:06:03,280 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd, sshd to die
+2025-01-20 00:06:03,281 INFO stopped: sshd (exit status 0)
+2025-01-20 00:06:05,285 INFO reaped unknown pid 223 (terminated by SIGTERM)
+2025-01-20 00:06:05,285 INFO reaped unknown pid 224 (terminated by SIGTERM)
+2025-01-20 00:06:05,285 INFO reaped unknown pid 225 (terminated by SIGTERM)
+2025-01-20 00:06:06,285 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-20 00:06:09,288 INFO waiting for syslogd, nginxd, php-fpmd, crond, postfixd to die
+2025-01-20 00:06:09,500 INFO stopped: postfixd (exit status 0)
+2025-01-20 00:06:09,500 WARN stopped: crond (terminated by SIGTERM)
+2025-01-20 00:06:10,512 INFO stopped: php-fpmd (exit status 0)
+2025-01-20 00:06:10,663 INFO stopped: nginxd (exit status 0)
+2025-01-20 00:06:11,766 INFO stopped: syslogd (exit status 0)
+2025-01-20 00:06:26,568 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-01-20 00:06:26,568 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2025-01-20 00:06:26,568 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2025-01-20 00:06:26,568 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2025-01-20 00:06:26,568 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2025-01-20 00:06:26,568 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2025-01-20 00:06:26,568 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2025-01-20 00:06:26,568 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2025-01-20 00:06:26,568 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2025-01-20 00:06:26,573 INFO RPC interface 'supervisor' initialized
+2025-01-20 00:06:26,573 INFO supervisord started with pid 1
+2025-01-20 00:06:27,575 INFO spawned: 'syslogd' with pid 79
+2025-01-20 00:06:27,576 INFO spawned: 'nginxd' with pid 80
+2025-01-20 00:06:27,578 INFO spawned: 'php-fpmd' with pid 81
+2025-01-20 00:06:27,580 INFO spawned: 'crond' with pid 82
+2025-01-20 00:06:27,582 INFO spawned: 'postfixd' with pid 84
+2025-01-20 00:06:27,583 INFO spawned: 'sshd' with pid 86
+2025-01-20 00:06:27,585 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:06:27,585 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:06:27,585 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:06:27,585 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:06:27,585 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-01-20 00:06:28,657 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

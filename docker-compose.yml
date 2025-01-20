@@ -15,6 +15,7 @@ services:
       - PHP_MEMORY_LIMIT=512M
       - WEB_DOCUMENT_ROOT=/app/public
       - COMPOSER_VERSION=2
+      - XDEBUG_MODE=coverage
     working_dir: /app
     networks:
       - laravel

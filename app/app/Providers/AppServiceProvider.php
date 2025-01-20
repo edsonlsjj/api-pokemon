@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
-use App\Domain\Repositories\Contracts\PokemonRepositoryInterface;
-use App\Repositories\PokemonRepository;
 use Illuminate\Support\ServiceProvider;
+use Modules\Pokemon\Domain\Repositories\Contracts\PokemonRepositoryInterface;
+use Modules\Pokemon\Infrastructure\Repositories\PokemonRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
